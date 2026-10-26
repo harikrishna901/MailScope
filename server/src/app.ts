@@ -1,4 +1,6 @@
-
+import path from 'node:path';
+import fs from 'node:fs';
+import { fileURLToPath } from 'node:url';
 import express, { type Express } from 'express';
 import cors from 'cors';
 import helmet from 'helmet';
@@ -73,6 +75,21 @@ export function createApp(
   }
 
   app.use('/api', createApiRouter(service));
+  const currentFile = fileURLToPath(import.meta.url);
+const currentDir = path.dirname(currentFile);
+const distPath = path.resolve(currentDir, '../../dist');
+
+if (fs.existsSync(distPath)) {
+  app.use(express.static(distPath));
+
+  app.get('*', (req, res, next) => {
+    if (req.path.startsWith('/api')) {
+      return next();
+    }
+
+    res.sendFile(path.join(distPath, 'index.html'));
+  });
+}
 
   // Consistent JSON response for requests to unknown endpoints.
   app.use((_req, res) => {
