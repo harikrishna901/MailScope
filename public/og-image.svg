@@ -1,0 +1,46 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="630" fill="#060A16"/>
+  <defs>
+    <radialGradient id="og-glow" cx="50%" cy="40%" r="50%">
+      <stop offset="0%" stop-color="#22D3EE" stop-opacity="0.18"/>
+      <stop offset="100%" stop-color="#060A16" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="og-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#22D3EE"/>
+      <stop offset="100%" stop-color="#6366F1"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#og-glow)"/>
+  
+  <!-- Logo Mark -->
+  <g transform="translate(100, 140)">
+    <rect width="96" height="96" rx="24" fill="url(#og-grad)"/>
+    <rect x="22" y="30" width="52" height="40" rx="8" fill="#060A16" fill-opacity="0.4" stroke="#FFFFFF" stroke-width="3"/>
+    <path d="M24 34L45 52C47.5 54.5 51.5 54.5 54 52L75 34" stroke="#FFFFFF" stroke-width="3.5" stroke-linecap="round"/>
+    <path d="M42 52L49 59L65 42" stroke="#22D3EE" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+
+  <!-- Title & Headline -->
+  <text x="220" y="195" fill="#FFFFFF" font-family="system-ui, sans-serif" font-size="38" font-weight="800" letter-spacing="-0.02em">MailCheck <tspan fill="#22D3EE">Pro</tspan></text>
+  <text x="220" y="225" fill="#A3B0C5" font-family="monospace" font-size="16" letter-spacing="0.05em">DELIVERABILITY INTELLIGENCE PLATFORM</text>
+
+  <text x="100" y="340" fill="#F1F5FB" font-family="system-ui, sans-serif" font-size="56" font-weight="800" letter-spacing="-0.03em">
+    Know What Your Email List
+  </text>
+  <text x="100" y="415" fill="#22D3EE" font-family="system-ui, sans-serif" font-size="56" font-weight="800" letter-spacing="-0.03em">
+    Can Actually Tell You.
+  </text>
+
+  <text x="100" y="480" fill="#A3B0C5" font-family="system-ui, sans-serif" font-size="24" font-weight="400">
+    Evidence-based syntax validation, DNS/MX routing, and non-intrusive SMTP recipient probes.
+  </text>
+
+  <!-- Features badge bar -->
+  <g transform="translate(100, 530)">
+    <text x="0" y="24" fill="#34D399" font-family="monospace" font-size="16" font-weight="600">✔ Zero Email Sent</text>
+    <text x="230" y="24" fill="#A3B0C5" font-family="monospace" font-size="16">·</text>
+    <text x="260" y="24" fill="#22D3EE" font-family="monospace" font-size="16" font-weight="600">✔ 100% In-Memory</text>
+    <text x="470" y="24" fill="#A3B0C5" font-family="monospace" font-size="16">·</text>
+    <text x="500" y="24" fill="#FBBF24" font-family="monospace" font-size="16" font-weight="600">✔ Honest Uncertainty</text>
+  </g>
+</svg>

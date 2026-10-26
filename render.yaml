@@ -1,0 +1,35 @@
+
+services:
+  - type: web
+    name: mailscope
+    runtime: node
+    plan: free
+    region: oregon
+    buildCommand: npm install && npm run build
+    startCommand: npm start
+    healthCheckPath: /api/health
+    autoDeploy: true
+    envVars:
+      - key: NODE_ENV
+        value: production
+
+      - key: CORS_ORIGIN
+        sync: false
+
+      - key: SMTP_ENABLED
+        value: "false"
+
+      - key: SMTP_TIMEOUT_MS
+        value: "8000"
+
+      - key: SMTP_HELO_HOST
+        value: "mailscope.app"
+
+      - key: SMTP_MAIL_FROM
+        value: "probe@mailscope.app"
+
+      - key: MAX_BATCH
+        value: "100"
+
+      - key: DOMAIN_AUTH_ENABLED
+        value: "true"

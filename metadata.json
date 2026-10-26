@@ -1,0 +1,6 @@
+{
+  "name": "Mailscope",
+  "description": "Evidence-based email deliverability intelligence platform providing transparent syntax validation, DNS/MX analysis, and SMTP recipient verification.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
